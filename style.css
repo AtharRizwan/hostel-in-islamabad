@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F23D4C;
+    color: white;
+    padding-left: 3vw;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 12.5%;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+
+/* Color Theme Under Consideration */
+ { color: #F23D4C; }
+ { color: #83A603; }
+ { color: #6E8C03; }
+ { color: #BFF207; }
+ { color: #F2F2F2; }
