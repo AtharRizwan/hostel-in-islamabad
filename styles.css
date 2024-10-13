@@ -84,7 +84,7 @@ main {
 }
 
 .fade-in {
-    animation: fadeIn 2s;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .highlights {
