@@ -45,8 +45,8 @@ body {
 .hero {
     position: relative;
     background-image: url(hostel.jpg);
+    background-color: var(--green);
     background-size: cover;
-    background-color: var(--light_green);
     color: var(--white);
     font-size: x-large;
     margin: 3vw 7vw;
@@ -108,7 +108,7 @@ body {
     position: relative;
     background-size: cover;
     text-align: center;
-    background-color: #BFF207;
+    background-color: var(--green);
     color: var(--white);
     font-size: x-large;
     font-weight: bold;
