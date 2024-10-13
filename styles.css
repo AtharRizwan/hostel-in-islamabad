@@ -1,0 +1,95 @@
+* {
+    --red: #F23D4C;
+    --green: #83A603;
+    --dark_green: #6E8C03;
+    --light_green: #BFF207;
+    --white: #F2F2F2;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--red);
+    color: white;
+    padding-left: 3vw;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 12.5%;
+}
+
+.navbar a:hover {
+    background-color: #D63A47;
+}
+
+.hero {
+    background-color: var(--light_green);
+    color: black;
+    margin: 10%;
+    padding: 10%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.highlights {
+    margin: 5%;
+}
+
+.flex {
+    display: flex;
+}
+
+.highlights article {
+    background-color: #BFF207;
+    color: black;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.features {
+    margin: 5%;
+}
+
+.feature-item {
+    background-color: #BFF207;
+    color: black;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.feature-item img {
+    height: 10%;
+}
+
+.footer {
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+
+
+/* Color Theme Under Consideration */
+ { color: #F23D4C; }
+ { color: #83A603; }
+ { color: #6E8C03; }
+ { color: #BFF207; }
+ { color: #F2F2F2; }
