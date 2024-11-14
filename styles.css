@@ -8,11 +8,8 @@
     --background: #E2E2E2;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-html, body {
-    height: 100%;
 }
 
 body {
@@ -200,11 +197,3 @@ main {
         padding: 10px 0;
     }
 }
-
-
-/* Color Theme Under Consideration */
- { color: #F23D4C; }
- { color: #83A603; }
- { color: #6E8C03; }
- { color: #BFF207; }
- { color: #F2F2F2; }

@@ -24,6 +24,7 @@ a {
 .services-grid h2 {
     color: var(--red);
     font-size: xx-large;
+    padding-bottom: 10px;
 }
 
 .grid-container {
@@ -39,6 +40,7 @@ a {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    width: 100%;
 }
 
 .service-item:hover {
@@ -105,9 +107,6 @@ a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .services-intro, .services-grid {
-    margin: 5vw 3vw;
-  }
   .pricing-table {
     font-size: medium;
   }
