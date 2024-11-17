@@ -12,11 +12,15 @@
         <a href="home.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
-        <button onclick="toggleBackground()">Change Background Colour</button>
     </header>
     <main>
+        <div class="button-container">
+            <button onclick="toggleBackground()">Change Background Colour</button>
+            <button onclick="changeTextStyle()">Change Text Style</button>
+            <button onclick="resetTextStyle()">Reset Text Style</button>
+        </div>
         <section class="about-intro">
-            <h1>About Us</h1>
+            <h1 class="color-change">About Us</h1>
             <p>Who we are and what we do</p>
         </section>
 
@@ -26,7 +30,7 @@
             </div>
 
             <div class="about-info-content">
-                <h2>Our Mission</h2>
+                <h2 class="color-change">Our Mission</h2>
                 <p class="about-details">Located in the heart of Islamabad, we have been providing the best hostel facilities for students and travelers alike. Our aim is to make your stay in Islamabad the most memorable one of your life. Our customer support team is active 24/7 to provide you with the best service and to solve any of your unforeseen problems during your stay or somehow related to it.</p>
                 <button id="toggleDetailsBtn" onclick="toggleDetails()">Show Details</button>
             </div>
@@ -34,7 +38,7 @@
 
         <!-- Contact Form Section -->
         <div class="contact-section">
-            <h2>Contact Us</h2>
+            <h2 class="color-change">Contact Us</h2>
             <form action="#" method="POST" class="contact-form">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required>

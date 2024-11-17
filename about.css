@@ -49,6 +49,17 @@
 
 .about-info-content p {
     text-align: justify; /* Justify the text */
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+    opacity: 0;
+}
+
+.about-info-content p.open {
+    display: block;
+    max-height: 500px;
+    opacity: 1;
 }
 
 #toggleDetailsBtn {
@@ -111,6 +122,7 @@
 }
 
 .contact-form .submit-button {
+    margin: 10px 0;
     padding: 1vw 2vw;
     font-size: large;
     font-weight: bold;
@@ -119,11 +131,16 @@
     color: var(--dark_green);
     border-radius: 5px;
     cursor: pointer;
+    width: auto;
 }
 
 .contact-form .submit-button:hover {
     background-color: var(--green);
     color: var(--white);
+}
+
+.contact-form .submit-button:active {
+    transform: scale(0.95);
 }
 
 /* Responsive Design */

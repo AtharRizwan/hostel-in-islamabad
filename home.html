@@ -13,11 +13,15 @@
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <button onclick="toggleBackground()">Change Background Colour</button>
         </header>
         <main>
+            <div class="button-container">
+                <button onclick="toggleBackground()">Change Background Colour</button>
+                <button onclick="changeTextStyle()">Change Text Style</button>
+                <button onclick="resetTextStyle()">Reset Text Style</button>
+            </div>
             <section class="hero">
-                <h1 class="fade-in">Welcome to Hostel in Islamabad</h1>
+                <h1 class="fade-in color-change">Welcome to Hostel in Islamabad</h1>
                 <p>Experience fun, relaxation, and adventure at our cozy hostel! </p>
             </section>
             <section class="highlights">
@@ -34,13 +38,13 @@
             <section class="features">
                 <h2>Our Unique Features</h2>
                 <div class="flex">
-                    <div class="feature-item pudding">
+                    <div class="feature-item pudding color-change">
                         <p>Hot Chocolate Pudding at 8 PM</p>
                     </div>
-                    <div class="feature-item breakfast">
+                    <div class="feature-item breakfast color-change">
                         <p>Freshly Baked Bread & Breakfast</p>
                     </div>
-                    <div class="feature-item bike">
+                    <div class="feature-item bike color-change">
                         <p>Bike Hire Available</p>
                     </div>
                 </div>

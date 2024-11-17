@@ -27,6 +27,32 @@ main {
     flex: 1;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+main button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: var(--dark_green);
+}
+
+main button:active {
+    background-color: var(--light_green);
+}
+
 .navbar {
     font-size: large;
     display: flex;
@@ -56,6 +82,7 @@ main {
 .navbar a:hover, .navbar button:hover {
     background-color: #D63A47;
 }
+
 
 .hero {
     position: relative;
@@ -202,5 +229,14 @@ main {
     .navbar a, .navbar button {
         width: 100%;
         padding: 10px 0;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    main button {
+        width: 80%;
     }
 }
