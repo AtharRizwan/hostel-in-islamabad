@@ -124,6 +124,8 @@ function displayError(inputField, message) {
     errorSpan.style.color = 'red';
     errorSpan.style.fontSize = 'small';
     errorSpan.textContent = message;
+    errorSpan.style.color = '#6B0811';
+    errorSpan.style.fontWeight ='bold';
 
     // Append the error message after the input field
     inputField.insertAdjacentElement('afterend', errorSpan);
