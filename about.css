@@ -47,6 +47,32 @@
     font-size: xx-large; /* Make the heading prominent */
 }
 
+.about-info-content p {
+    text-align: justify; /* Justify the text */
+}
+
+#toggleDetailsBtn {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#toggleDetailsBtn:hover {
+    background-color: var(--light_green);
+    color: var(--dark_green);
+}
+
+#toggleDetailsBtn:active {
+    transform: scale(0.95);
+}
+
 .contact-section {
     margin: 3vw 7vw;
     padding: 3vw;
@@ -116,7 +142,7 @@
     }
 
     .about-info-content {
-        padding-left: 0;
+        padding: 20px;
     }
 
     .contact-form {

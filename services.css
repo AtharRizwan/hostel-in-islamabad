@@ -57,7 +57,7 @@ a {
 .service-item h3 {
     color: var(--green);
     font-size: large;
-    margin: 15px 0 5px 0;
+    margin: 15px 10px 5px 10px;
 }
 
 .service-item p {
@@ -96,11 +96,12 @@ a {
     text-align: left;
 }
 
-.pricing-table tbody tr:nth-child(even) {
-    background-color: var(--background);
+.pricing-table tbody tr {
+    color: var(--black);
 }
 
 .pricing-table tbody tr:hover {
+    color: #000;
     background-color: #f2f2f2;
     transition: background-color 0.3s ease;
 }
