@@ -13,13 +13,16 @@
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
+            <div class="dropdown">
+                <button class="dropbtn">Page Styles</button>
+                <div class="dropdown-content">
+                    <button onclick="toggleBackground()">Change Background Colour</button>
+                    <button onclick="changeTextStyle()">Change Text Style</button>
+                    <button onclick="resetTextStyle()">Reset Text Style</button>
+                </div>
+            </div>
         </header>
         <main>
-            <div class="button-container">
-                <button onclick="toggleBackground()">Change Background Colour</button>
-                <button onclick="changeTextStyle()">Change Text Style</button>
-                <button onclick="resetTextStyle()">Reset Text Style</button>
-            </div>
             <section class="product-details">
             <h1>Hot Chocolate Pudding @ 8 PM</h1>
             <ul>
