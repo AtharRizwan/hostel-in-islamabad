@@ -53,13 +53,14 @@ main button:active {
     background-color: var(--light_green);
 }
 
-.navbar {
+.navbar {   
     font-size: large;
     display: flex;
     justify-content: space-between; /* Spreads the items apart */
     align-items: center;
     background-color: var(--red);
     color: var(--white);
+    
 }
 
 .navbar img {
@@ -79,10 +80,67 @@ main button:active {
     text-align: center;
 }
 
-.navbar a:hover, .navbar button:hover {
+
+.navbar a:hover, .navbar button:hover, .dropdown:hover {
     background-color: #D63A47;
 }
 
+.dropdown {
+    text-decoration: none;
+    position: relative;
+    flex-grow: 2;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Connect to the navbar */
+    background-color: var(--background);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    min-width: 200px;
+    overflow: hidden;
+    width: 100%; /* Set width to 100% of the parent dropdown */
+}
+
+.dropdown-content button {
+    all: unset;
+    display: block;
+    width: 100%;
+    color: var(--black);
+    padding: 10px 15px;
+    text-align: left;
+    font-size: medium;
+    cursor: pointer;
+    background-color: var(--background);
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.dropdown-content button:hover {
+    background-color: var(--light_green);
+    color: var(--black);
+}
+
+.dropdown-content button:active {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 15px;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
 
 .hero {
     position: relative;
@@ -226,9 +284,8 @@ main button:active {
         padding: 20% 5%;
     }
 
-    .navbar a, .navbar button {
+    .navbar a, .navbar button, .dropdown {
         width: 100%;
-        padding: 10px 0;
     }
 
     .button-container {
@@ -238,5 +295,22 @@ main button:active {
 
     main button {
         width: 80%;
+    }
+
+        
+    .dropdown-content {
+        width: 100%;
+        background-color: var(--background);
+    }
+
+    .dropdown-content button {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: medium;
+        text-align: center;
+    }
+
+    .dropbtn {
+        width: 100%; /* Full-width button for mobile */
     }
 }

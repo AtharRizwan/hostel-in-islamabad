@@ -14,13 +14,16 @@
       <a href="home.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
+      <div class="dropdown">
+        <button class="dropbtn">Page Styles</button>
+        <div class="dropdown-content">
+            <button onclick="toggleBackground()">Change Background Colour</button>
+            <button onclick="changeTextStyle()">Change Text Style</button>
+            <button onclick="resetTextStyle()">Reset Text Style</button>
+        </div>
+    </div>
     </header>
     <main>
-      <div class="button-container">
-        <button onclick="toggleBackground()">Change Background Colour</button>
-        <button onclick="changeTextStyle()">Change Text Style</button>
-        <button onclick="resetTextStyle()">Reset Text Style</button>
-      </div>
       <section class="services-intro">
         <h1 class="color-change">Our Services</h1>
         <p>Explore the amazing services we offer to enhance your stay!</p>
