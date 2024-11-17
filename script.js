@@ -131,7 +131,18 @@ function displayError(inputField, message) {
 
 // Attach validateForm to form submission
 document.getElementById('contact-form').onsubmit = function (event) {
-    if (!validateForm()) {
-        event.preventDefault(); // Stop form submission if validation fails
-    }
+    event.preventDefault(); // Stop form submission if validation fails
+    if (validateForm()) {
+        const nameField = document.getElementById('name');
+        const emailField = document.getElementById('email');
+        const phoneField = document.getElementById('phone');
+        const messageField = document.getElementById('message');
+
+        nameField.value = '';
+        emailField.value = '';
+        phoneField.value = '';
+        messageField.value = '';
+
+        alert('Form submitted Successfully');
+    } 
 };
