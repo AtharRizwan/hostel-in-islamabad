@@ -1,20 +1,53 @@
   var add_review = function(){
      // Access form inputs
     const firstName = document.getElementById("first_name").value;
+    document.getElementById("first_name").value = "";
     const lastName = document.getElementById("last_name").value;
+    document.getElementById("last_name").value = "";
     const username = document.getElementById("username").value;
+    document.getElementById("username").value = "";
     const websiteURL = document.getElementById("url").value;
+    document.getElementById("url").value = "";
     const reviewText = document.querySelector("textarea").value;
+    document.querySelector("textarea").value = "";
 
     const warning = document.getElementById("warning");
     warning.innerHTML = "";
 
     if (firstName === "" || lastName === "" || username === "" || websiteURL === "" || reviewText === "") {
-        warning.innerHTML = "Please fill in all fields";
+      warning.innerHTML = "Please fill in all fields";
+      return;
+    }
+
+    // adding more validation
+    if (firstName.length < 2) {
+      warning.innerHTML = "First name must be at least 2 characters long";
+      return;
+    }
+
+    if (lastName.length < 2) {
+      warning.innerHTML = "Last name must be at least 2 characters long";
+      return;
+    }
+
+    if (username.length < 2) {
+      warning.innerHTML = "Username must be at least 2 characters long";
+      return;
+    }
+
+    if (websiteURL.length < 5) {
+      warning.innerHTML = "Website URL must be at least 5 characters long";
+      return;
+    }
+
+    if (websiteURL.indexOf("http") === -1) {
+      warning.innerHTML = "Website URL must contain 'http' or 'https'";
+      return;
     }
 
     if (reviewText.length < 50) {
-        warning.innerHTML = "Review must be at least 50 characters long";
+      warning.innerHTML = "Review must be at least 50 characters long";
+      return;
     }
 
     // Log the values to verify
