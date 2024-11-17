@@ -227,12 +227,12 @@
 
 .container {
   width:55%;
+  height: 500px;
 	margin: auto;
   margin-bottom: 20px;
-  border-radius:3% 0% 2%;
 	overflow-x: hidden;
 	justify-content: center;
-	background: linear-gradient(90deg, #131417, var(--dark) 35% 65%, #131417);
+	background: white;
 }
 
 .container .form_text{
@@ -243,7 +243,7 @@
   color: var(--red);
 }
 
-container form{
+.container form{
   padding: 30px 0 0 0;
 }
 .container form .form-row{
@@ -266,24 +266,23 @@ form .form-row .textarea{
   height: 100%;
   border: none;
   font-size: 17px;
-  padding:10px;
   border-bottom: 2px solid rgba(0,0,0, 0.12);
 }
 .input-data input:focus ~ label, .textarea textarea:focus ~ label,
 .input-data input:valid ~ label, .textarea textarea:valid ~ label{
-  transform: translateY(-20px);
+  transform: translateY(-24px);
   font-size: 10px;
-  color: var(--green);
+  color: var(--dark_green);
 }
 .textarea textarea{
   resize: none;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .input-data label{
   position: absolute;
   pointer-events: none;
+  padding-left:3px;
   bottom: 8px;
-  left:5px;
   font-size: 16px;
   transition: all 0.3s ease;
 }
@@ -292,6 +291,14 @@ form .form-row .textarea{
   bottom: 40px;
   background: #fff;
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 .input-data .underline{
   position: absolute;
   bottom: 0;
@@ -317,13 +324,13 @@ form .form-row .textarea{
 .submit-btn .input-data{
   overflow: hidden;
   height: 45px!important;
-  width: 25%!important;
+  width: 20%!important;
 }
 .submit-btn .input-data .inner{
   height: 100%;
-  width: 300%;
+  width: 200%;
   position: absolute;
-  left: -100%;
+  left: -50%;
   background: -webkit-linear-gradient(right, var(--light_green), var(--green), #56d8e4);
   transition: all 0.4s;
 }
@@ -334,7 +341,7 @@ form .form-row .textarea{
   background: none;
   border: none;
   color: #fff;
-  font-size: 17px;
+  font-size: 1vw;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -352,6 +359,7 @@ form .form-row .textarea{
 @media (max-width: 1000px) {
   .container {
     width:90%;
+    height:700px;
   }
   .container .text{
     font-size: 30px;
@@ -368,5 +376,8 @@ form .form-row .textarea{
   }
   .submit-btn .input-data{
     width: 40%!important;
+  }
+  .submit-btn .input-data input{
+    font-size: 15px;
   }
 }
