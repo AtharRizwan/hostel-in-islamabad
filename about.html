@@ -39,12 +39,15 @@
         <!-- Contact Form Section -->
         <div class="contact-section">
             <h2 class="color-change">Contact Us</h2>
-            <form action="#" method="POST" class="contact-form">
+            <form action="#" id="contact-form" method="POST" class="contact-form">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name">
 
                 <label for="email">Your Email</label>
                 <input type="email" id="email" name="email" required>
+
+                <label for="phone">Your Phone no.</label>
+                <input type="text" id="phone" name="phone" required>
 
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>

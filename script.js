@@ -74,3 +74,64 @@ function resetTextStyle() {
     localStorage.setItem('italicHeadings', 'false');
     localStorage.setItem('redHeadings', 'false');
 }
+
+function validateEmail(email) {
+    // Regular expression to validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Test the email against the regex and return true or false
+    return emailRegex.test(email);
+}
+
+
+
+function validateForm() {
+    const nameField = document.getElementById('name');
+    const emailField = document.getElementById('email');
+    const phoneField = document.getElementById('phone');
+
+    // Clear previous error messages
+    document.querySelectorAll('.error-message').forEach(msg => msg.remove());
+
+    let isValid = true; // Track overall form validity
+
+    // Validate name field
+    if (nameField.value.trim() === '') {
+        displayError(nameField, "Please enter a name");
+        isValid = false;
+    }
+
+    // Validate email field
+    if (!validateEmail(emailField.value.trim())) {
+        displayError(emailField, "Please enter a valid email");
+        isValid = false;
+    }
+
+    // Validate phone field: only digits
+    const phoneRegex = /^\d+$/;
+    if (!phoneRegex.test(phoneField.value.trim())) {
+        displayError(phoneField, "Please enter a valid phone number (digits only)");
+        isValid = false;
+    }
+
+    return isValid;
+}
+
+// Function to display error messages
+function displayError(inputField, message) {
+    const errorSpan = document.createElement('span');
+    errorSpan.className = 'error-message';
+    errorSpan.style.color = 'red';
+    errorSpan.style.fontSize = 'small';
+    errorSpan.textContent = message;
+
+    // Append the error message after the input field
+    inputField.insertAdjacentElement('afterend', errorSpan);
+}
+
+// Attach validateForm to form submission
+document.getElementById('contact-form').onsubmit = function (event) {
+    if (!validateForm()) {
+        event.preventDefault(); // Stop form submission if validation fails
+    }
+};
