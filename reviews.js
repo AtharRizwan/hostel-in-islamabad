@@ -1,16 +1,10 @@
   var add_review = function(){
      // Access form inputs
     const firstName = document.getElementById("first_name").value;
-    document.getElementById("first_name").value = "";
     const lastName = document.getElementById("last_name").value;
-    document.getElementById("last_name").value = "";
     const username = document.getElementById("username").value;
-    document.getElementById("username").value = "";
     const websiteURL = document.getElementById("url").value;
-    document.getElementById("url").value = "";
     const reviewText = document.querySelector("textarea").value;
-    document.querySelector("textarea").value = "";
-
     const warning = document.getElementById("warning");
     warning.innerHTML = "";
 
@@ -49,6 +43,13 @@
       warning.innerHTML = "Review must be at least 50 characters long";
       return;
     }
+
+    document.querySelector("textarea").value = "";
+    document.getElementById("first_name").value = "";
+    document.getElementById("last_name").value = "";
+    document.getElementById("username").value = "";
+    document.getElementById("url").value = "";
+
 
     // Log the values to verify
     console.log("First Name:", firstName);
