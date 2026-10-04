@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bike Hire - Hostel in Islamabad</title>
+        <meta name="description" content="Hire a bike from Hostel in Islamabad and explore the city and its scenic routes at your own pace.">
+        <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,600;0,700;1,600;1,700&display=swap">
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <link rel="stylesheet" href="../assets/css/components.css">
+        <link rel="stylesheet" href="../assets/css/service-detail.css">
+        <script src="../assets/js/theme.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/logo.png" alt="Hostel in Islamabad" width="465" height="148" class="logo-default">
+                    <img src="../assets/images/logo-white.png" alt="Hostel in Islamabad" width="465" height="148" class="logo-dark">
+                </a>
+                <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <nav class="site-nav" id="site-nav" aria-label="Main">
+                    <a href="../index.html">Home</a>
+                    <a href="../about.html">About</a>
+                    <a href="../services.html" aria-current="page">Services</a>
+                    <div class="dropdown">
+                        <button type="button" class="dropbtn">Page Styles</button>
+                        <div class="dropdown-content">
+                            <button type="button" onclick="toggleBackground()">Change Background Colour</button>
+                            <button type="button" onclick="changeTextStyle()">Change Text Style</button>
+                            <button type="button" onclick="resetTextStyle()">Reset Text Style</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="section service-detail">
+                <div class="container">
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <ol>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../services.html">Services</a></li>
+                            <li aria-current="page">Bike Hire</li>
+                        </ol>
+                    </nav>
+                    <div class="two-col">
+                        <div class="service-media">
+                            <img src="../assets/images/bike.jpg" alt="Cyclist riding a hired bike at sunset" width="408" height="408">
+                        </div>
+                        <div class="service-copy">
+                            <span class="eyebrow">Our services</span>
+                            <h1 class="color-change">Bike Hire</h1>
+                            <ul class="check-list">
+                                <li>Explore the beautiful surroundings of Islamabad at your own pace with our <strong>Bike Hire</strong>.</li>
+                                <li>We provide high-quality bikes, helmets, and safety gear, ensuring a fun and safe experience.</li>
+                                <li>Prefer company? Join one of our guided rides through scenic routes, <strong>highlighting local attractions</strong> and hidden gems.</li>
+                            </ul>
+                            <div class="price-box">
+                                <span class="price-label">Price</span>
+                                <span class="price-value">Rs 150 per day</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="../about.html#contact" class="btn btn-primary">Ask about this</a>
+                                <a href="../services.html" class="btn btn-outline">&larr; All services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-alt more-services">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="color-change">More services</h2>
+                    </div>
+                    <div class="grid">
+                        <a href="../services/pudding.html" class="card card-link">
+                            <div class="card-media">
+                                <img src="../assets/images/pudding.jpg" alt="" width="728" height="728" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <span class="chip">Rs 500 per serving</span>
+                                <h3>Hot Chocolate Pudding @ 8 PM</h3>
+                            </div>
+                        </a>
+                        <a href="../services/breakfast.html" class="card card-link">
+                            <div class="card-media">
+                                <img src="../assets/images/breakfast.jpg" alt="" width="800" height="800" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <span class="chip">Rs 1000 per person</span>
+                                <h3>Freshly Baked Bread &amp; Breakfast (7 AM - 9 AM)</h3>
+                            </div>
+                        </a>
+                        <a href="../services/pickup.html" class="card card-link">
+                            <div class="card-media">
+                                <img src="../assets/images/pickup.jpg" alt="" width="624" height="416" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <span class="chip">Complimentary</span>
+                                <h3>Free Pick-up &amp; Drop-off</h3>
+                            </div>
+                        </a>
+                        <a href="../services/events.html" class="card card-link">
+                            <div class="card-media">
+                                <img src="../assets/images/events.jpg" alt="" width="640" height="480" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <span class="chip">Varies by event</span>
+                                <h3>Fun Events</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo-white.png" alt="Hostel in Islamabad" width="465" height="148" loading="lazy">
+                    <p>A cozy, friendly base for students and travellers in the heart of Islamabad.</p>
+                </div>
+                <div>
+                    <h2 class="footer-title">Explore</h2>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer-title">Get in touch</h2>
+                    <ul>
+                        <li>Contact us: <a href="tel:+923001234567">+92&nbsp;300&nbsp;1234567</a></li>
+                        <li>Email: <a href="mailto:info@hostelinislamabad.com">info@hostelinislamabad.com</a></li>
+                        <li>Follow us: <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>, <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>, and <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">X</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">&copy; 2026 Hostel in Islamabad. All rights reserved.</div>
+            </div>
+        </footer>
+
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

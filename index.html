@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hostel in Islamabad</title>
+        <meta name="description" content="A cozy hostel in Islamabad with fresh breakfast, nightly hot chocolate pudding, bike hire and free pick-up and drop-off.">
+        <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,600;0,700;1,600;1,700&display=swap">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <link rel="stylesheet" href="assets/css/home.css">
+        <script src="assets/js/theme.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Hostel in Islamabad" width="465" height="148" class="logo-default">
+                    <img src="assets/images/logo-white.png" alt="Hostel in Islamabad" width="465" height="148" class="logo-dark">
+                </a>
+                <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <nav class="site-nav" id="site-nav" aria-label="Main">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <div class="dropdown">
+                        <button type="button" class="dropbtn">Page Styles</button>
+                        <div class="dropdown-content">
+                            <button type="button" onclick="toggleBackground()">Change Background Colour</button>
+                            <button type="button" onclick="changeTextStyle()">Change Text Style</button>
+                            <button type="button" onclick="resetTextStyle()">Reset Text Style</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero-content">
+                    <span class="eyebrow">Cozy hostel in Islamabad</span>
+                    <h1 class="fade-in color-change">Welcome to Hostel in Islamabad</h1>
+                    <p class="lead">Experience fun, relaxation, and adventure at our cozy hostel!</p>
+                    <div class="hero-actions">
+                        <a href="services.html" class="btn btn-primary">Explore services</a>
+                        <a href="about.html#contact" class="btn btn-ghost">Contact us</a>
+                    </div>
+                    <ul class="hero-facts">
+                        <li>24/7 support</li>
+                        <li>Free pick-up &amp; drop-off</li>
+                        <li>Breakfast 7&ndash;9 AM</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="eyebrow">What we offer</span>
+                        <h2 class="color-change">Our Unique Features</h2>
+                        <p class="lead">Little extras that make your stay feel like home.</p>
+                    </div>
+                    <div class="grid">
+                        <a href="services/pudding.html" class="card card-link">
+                            <div class="card-media">
+                                <img src="assets/images/pudding.jpg" alt="" width="728" height="728" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h3>Hot Chocolate Pudding at 8 PM</h3>
+                                <p>End your day with our signature dessert at 8 PM.</p>
+                                <span class="card-more">Learn more &rarr;</span>
+                            </div>
+                        </a>
+                        <a href="services/breakfast.html" class="card card-link">
+                            <div class="card-media">
+                                <img src="assets/images/breakfast.jpg" alt="" width="800" height="800" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h3>Freshly Baked Bread &amp; Breakfast</h3>
+                                <p>Enjoy our delicious breakfast to start your day fresh.</p>
+                                <span class="card-more">Learn more &rarr;</span>
+                            </div>
+                        </a>
+                        <a href="services/bike-hire.html" class="card card-link">
+                            <div class="card-media">
+                                <img src="assets/images/bike.jpg" alt="" width="408" height="408" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h3>Bike Hire Available</h3>
+                                <p>Explore the city by renting our bikes at affordable rates.</p>
+                                <span class="card-more">Learn more &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-alt">
+                <div class="container">
+                    <div class="section-header center">
+                        <span class="eyebrow">Testimonials</span>
+                        <h2 class="color-change">What Our Guests Say</h2>
+                    </div>
+                    <div class="quote-grid">
+                        <figure class="card quote-card">
+                            <blockquote>
+                                <p>… well it certainly wasn’t what I expected, but that’s not a bad thing. The hostel area itself is quite a welcoming area …</p>
+                            </blockquote>
+                            <figcaption>Hostel guest</figcaption>
+                        </figure>
+                        <figure class="card quote-card">
+                            <blockquote>
+                                <p>As a business owner, I’m constantly looking for new experiences … the facilities offered by the hostel were extraordinary!</p>
+                            </blockquote>
+                            <figcaption>Business owner</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="cta-band">
+                        <div>
+                            <h2 class="color-change">Ready to stay with us?</h2>
+                            <p>Questions about rooms, prices or pick-up? Our team replies 24/7.</p>
+                        </div>
+                        <a href="about.html#contact" class="btn btn-light">Get in touch</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo-white.png" alt="Hostel in Islamabad" width="465" height="148" loading="lazy">
+                    <p>A cozy, friendly base for students and travellers in the heart of Islamabad.</p>
+                </div>
+                <div>
+                    <h2 class="footer-title">Explore</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer-title">Get in touch</h2>
+                    <ul>
+                        <li>Contact us: <a href="tel:+923001234567">+92&nbsp;300&nbsp;1234567</a></li>
+                        <li>Email: <a href="mailto:info@hostelinislamabad.com">info@hostelinislamabad.com</a></li>
+                        <li>Follow us: <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>, <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>, and <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">X</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">&copy; 2026 Hostel in Islamabad. All rights reserved.</div>
+            </div>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
